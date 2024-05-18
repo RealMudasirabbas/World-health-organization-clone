@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: block;
+    color: white;
+    background-color: #032668de;
+    width: 100%;
+    height: 50px;
+}
+
+.main-header {
+    display: flex;
+    margin-left: 25px;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-header li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    min-height: 48px;
+    padding: 0 20px;
+}
+
+#item-1 {
+    color: #ffffff;
+    padding: 12px;
+    background-color: #0078d4;
+    text-decoration: none;
+}
+
+#item-2 {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#item-2:hover,
+#item-4:hover {
+    color: white;
+    background-color: #0078d4;
+}
+
+.second-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+#item-3,
+#item-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 20px;
+}
+
+#item-4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#lang-text {
+    margin-left: 5px;
+}
+
+.select-region {
+    margin-left: 10px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#icon {
+    background-color: #ffffff;
+    background-position: 0% 0%;
+    color: #092862;
+    height: 74px;
+    width: 205.297px;
+    padding: 8px 8px 8px 8px;
+    max-width: 100%;
+    display: inline;
+    overflow: hidden;
+    margin-top: 8px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.logo {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+
+#who {
+    color: #009ade;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: -70px;
+    line-height: 1;
+    white-space: pre;
+}
