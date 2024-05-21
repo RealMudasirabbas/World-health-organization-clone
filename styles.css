@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: "Noto Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -164,7 +161,7 @@ body {
 .hero-section {
     display: block;
     position: relative;
-    width: 1350px;
+    width: 100%;
     height: 700px;
     background-image: url("delivery-of-medical-supplies-to-hospital-in-gaza-april-2024.tmb-1920v.jpg");
 }
@@ -191,9 +188,9 @@ body {
     width: 100%;
     height: 3px;
     padding-bottom: 10px;
-    margin: 30px 20px;
-    border-bottom: solid 1px #274375;
-    color: #092865;
+    /* margin: 30px 20px; */
+    /* border-bottom: solid 1px #274375; */
+    color: #1e438d;
     table-layout: fixed;
 }
 
@@ -202,11 +199,13 @@ body {
     font-family: "Nato Sans";
     font-weight: 900;
     float: left;
+    margin: 30px;
 }
 #news-room-link {
     float: right;
     font-size: 30px;
     font-family: "Nato Sans";
+    margin: 30px;
     font-weight: 900;
     margin-right: 15px;
     margin-bottom: 10px;
@@ -226,7 +225,9 @@ hr {
 
 .thumb {
     flex: 1 1 calc(25% - 20px);
+    margin-top: 50px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 figure {
@@ -257,13 +258,213 @@ figcaption {
 }
 
 #pic-text {
-    display: block;
+    display: flex;
     color: #092862;
     font-size: 18px;
     font-weight: 900;
+    text-align: center;
+    margin-left: 20px;
+    border: 2px solid white;
+}
+#simple-text {
+    display: flex;
+    color: #092862;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.thumb:hover figure {
+    border: 2px solid #13306b;
+}
+
+.h3-color {
+    color: rgb(73, 65, 65);
+}
+
+.h2-color {
+    color: #092865;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+.flex-item-1 {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.flex-childs {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 5px;
 }
 
 
-.thumb:hover figure {
-    border: 2px solid #274345;
+#mainSection {
+    min-height: 700px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    color: #00205c;
+}
+#firstSection {
+    min-height: 500px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#secondSection {
+    min-height: 500px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.firstHeading {
+    width: 50%;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+.secondHeading {
+    width: 50%;
+    padding: 10px;
+    /* border: 1px solid black; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.imageDiv {
+    width: 100%;
+    height: 60%;
+    border: 1px solid black;
+}
+
+#imgDiv1 {
+    background-image: url('tobacco day.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#imgDiv2 {
+    background-image: url('food-saferty-video-thumbnail.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#imgDiv3 {
+    background-image: url('who75-hero-banner.webp');
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+}
+.divText {
+    width: 100%;
+    height: 40%;
+}
+#firstDiv {
+    height: 35%;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
+#secondDiv {
+    height: 35%;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
+#thirdDiv {
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+.fourthDiv {
+    height: 17%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.secondDivImage {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid black;
+    background-image: url('tobacco day.jpg');
+    background-size: cover;
+}
+.secondDivText {
+    height: 90%;
+    width: 75%;
+}
+
+#thirdPicture {
+    background-image: url(who1.webp);
+    background-size: cover;
+}
+
+.footer1 {
+    min-height: 100px;
+    background-color: #00205c;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h3 {
+    margin-bottom: 10px;
+}
+.footerSections {
+    height: 200px;
+    font-size: 18px;
+    font-weight: 100;
+    width: 25%;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.footerSections button {
+    height: 50px;
+    width: 200px;
+    background-color: #013aa4;
+    color: white;
+    border: 2px solid rgb(19, 26, 49);
+    margin: 15px;
+    font-weight: 900;
+}
+.footerSections button:hover {
+    border: 2px solid white;
+}
+
+.footerSection1-2 {
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 480px;
+}
+
+
+
+.footer2 {
+    height: 80px;
+    background-color: #013aa4;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana,  sans-serif;
 }
